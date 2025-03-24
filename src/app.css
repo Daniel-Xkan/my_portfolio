@@ -1,0 +1,122 @@
+/* app.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+.socials {
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.headshot {
+    width: 150px;
+    height: 150px;
+    background-color: #bdc3c7;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 20px;
+    filter: grayscale(20%);
+}
+.main-content {
+    background-image: url('../public/images/geisel.jpg'); /* Replace with the actual path to the image */
+    filter: grayscale(60%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 15%; /* Account for the fixed sidebar width */
+    width: 85%; /* Fill the rest of the page */
+    min-width: 1060px;
+    height: 100vh; /* Fill the full height of the page */
+    display: flex;
+    justify-content: flex-start;
+    align-items: left;
+    flex-direction: column;
+    background-color: #a19a9a; /* Mid light grey */
+    left: 0;
+    top: 0;
+    padding-top: 200px;
+    overflow: hidden; /* Prevent vertical scroll bar */
+    position: fixed;
+}
+
+.sidebar {
+    width: 15%;
+    min-width: 200px; /* Prevent shrinking below a certain width */
+    max-width: 300px; /* Optional: Prevent growing too large */
+    height: 100vh;
+    min-height: 650px;
+    background-color: #373735; /* Light blue */
+    display: flex;
+    justify-content: flex-start; /* Align items to the top */
+    align-items: center;
+    flex-direction: column;
+    color: #ecf0f1;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 200px; /* Optional: Add some spacing from the top */
+    gap: 20px; /* Add space between rows */
+}
+
+.sidebar_text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Adjust the gap as needed */
+    padding: 10px;
+}
+
+.sidebar_text a:link {
+    color: #cecbbd;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.sidebar_text a:visited {
+    color: #cecbbd;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.sidebar_socials a:link{
+    color: #cecbbd
+}
+.sidebar_socials a:visited{
+    color: #cecbbd
+}
+
+
+.declaim {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 0.9rem;
+    background-color: #504f4c; /* Slightly darker blue */
+}
+
+.text {
+    color: #cecbbd;
+}
+
+.text_main {
+    color: #373735;
+    padding-left: 50px;
+    position: relative;
+    top: 15%;
+
+}
