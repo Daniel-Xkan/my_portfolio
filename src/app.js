@@ -8,7 +8,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const App = () => {
   return (
-    <div className="flex h-screen" style={{ fontFamily: "Futura, Helvetica, sans-serif" }}>
+    <div className="flex h-screen overflow-hidden" style={{ fontFamily: "Futura, Helvetica, sans-serif" }}>
       {/* Sidebar */}
       <aside className="w-64 bg-gray-200 text-black flex flex-col items-center p-6 fixed left-0 top-0 h-full sidebar text">
         <img
@@ -21,17 +21,14 @@ const App = () => {
           <a href="#home">
             <NavItem text="HOME" />
           </a>
-          <a href="#about">
-            <NavItem text="ABOUT ME" />
-          </a>
           <a href="#resume">
             <NavItem text="RESUME" />
           </a>
           <a href="#portfolio">
             <NavItem text="PORTFOLIO" />
           </a>
-          <a href="#blog">
-            <NavItem text="BLOG" />
+          <a href="#about">
+            <NavItem text="ABOUT ME" />
           </a>
           <a href="#contact">
             <NavItem text="CONTACT" />
@@ -52,7 +49,7 @@ const App = () => {
       </aside>
 
       {/* Main Content */}
-      <main className="flex-1 relative main-content">
+      <main className="flex-1 relative overflow-y-auto main-content">
         <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center text_main">
           <h1 style={{ fontSize:30}} className="text-5xl font-bold">
             I am <br /> 
@@ -76,6 +73,7 @@ const App = () => {
               delaySpeed={2000}
             />
           </p>
+          
         </div>
       </main>
     </div>
