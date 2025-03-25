@@ -135,36 +135,6 @@ body {
     top: 15%;
 
 }
-@keyframes typing {
-    from {
-        width: 0;
-    }
-    to {
-        width: 100%;
-    }
-}
-
-@keyframes blink-caret {
-    from, to {
-        border-color: transparent;
-    }
-    50% {
-        border-color: #373735;
-    }
-}
-
-.type_writer {
-    overflow: hidden;
-    border-right: .15em solid #373735;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .1em;
-    display: inline-block; /* Ensure proper inline behavior */
-    width: 0; /* Start with zero width for animation */
-    animation: 
-        typing 3.5s steps(30, end),
-        blink-caret .75s step-end infinite;
-}
 
 .align_middle{
     display: flex;

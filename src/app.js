@@ -56,7 +56,7 @@ const App = () => {
           <h1 className="text-5xl font-bold">
             I am <br /> Daniel (Xuechen) <span className="text-blue-400">Kan</span>
           </h1>
-          <p className="text-xl mt-2 type_writer"> Bioinfomatics scientist</p>
+          <p className="text-xl mt-2"> Bioinfomatics scientist</p>
           <p className="text-xl mt-2"> Bio-AI Developer</p>
           <p className="text-xl mt-2"> UI/UX design, Web developer</p>
           <p className="text-xl mt-2"> Photographer</p>
