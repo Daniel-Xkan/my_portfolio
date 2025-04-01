@@ -37,10 +37,11 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: scroll; /* Make the background move with scrolling */
     margin-left: 14%; /* Account for the fixed sidebar width */
     width: 86%; /* Fill the rest of the page */
     min-width: 1060px;
-    height: 100vh; /* Fill the full height of the page */
+    height: 100vh; 
     display: flex;
     justify-content: flex-start;
     align-items: left;
@@ -48,9 +49,44 @@ body {
     background-color: #a19a9a; /* Mid light grey */
     left: 0;
     top: 0;
-    padding-top: 210px;
-    overflow: hidden; /* Prevent vertical scroll bar */
+    /* padding-top: 210px; */
+    /* padding-bottom: calc(100vh - 100%); */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent horizontal scroll bar */
     position: fixed;
+}
+.subsection {
+    min-height: 100vh; /* Ensure each subsection takes up at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: calc(100vh - 100%); /* Add padding to push the next section to a new page */
+    page-break-before: always; /* Force each subsection to start on a new page when printing */
+    background-color: white; /* Light grey background */
+}
+
+.subsection_home {
+    min-height: 100vh; /* Ensure each subsection takes up at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+    padding-bottom: calc(100vh - 100%); /* Add padding to push the next section to a new page */
+    page-break-before: always; /* Force each subsection to start on a new page when printing */
+    background-color: transparent; /* Light grey background */
+    padding-left: 20px; /* Optional: Add some padding to the left */
+}
+.subsection_resume {
+    min-height: 100vh; /* Ensure each subsection takes up at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the left */
+    padding-bottom: calc(100vh - 100%); /* Add padding to push the next section to a new page */
+    page-break-before: always; /* Force each subsection to start on a new page when printing */
+    background-color: transparent; /* Light grey background */
+    padding-left: 20px; /* Optional: Add some padding to the left */
 }
 
 .sidebar {
@@ -133,6 +169,7 @@ body {
     padding-left: 50px;
     position: relative;
     top: 15%;
+    height: 100%;
 
 }
 
@@ -143,3 +180,5 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+
+/* contact me styles */
