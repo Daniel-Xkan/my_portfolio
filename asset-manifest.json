@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "./static/css/main.a4adc660.css",
-    "main.js": "./static/js/main.1827c959.js",
+    "main.js": "./static/js/main.87cafec8.js",
     "static/media/geisel.jpg": "./static/media/geisel.8c44d6f6ef5053770e29.jpg",
     "index.html": "./index.html",
     "main.a4adc660.css.map": "./static/css/main.a4adc660.css.map",
-    "main.1827c959.js.map": "./static/js/main.1827c959.js.map"
+    "main.87cafec8.js.map": "./static/js/main.87cafec8.js.map"
   },
   "entrypoints": [
     "static/css/main.a4adc660.css",
-    "static/js/main.1827c959.js"
+    "static/js/main.87cafec8.js"
   ]
 }
