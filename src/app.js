@@ -12,7 +12,7 @@ const App = () => {
       {/* Sidebar */}
       <aside className="w-64 bg-gray-200 text-black flex flex-col items-center p-6 fixed left-0 top-0 h-full sidebar text">
         <img
-          src="/images/headshot.jpg"
+          src="images/headshot.jpg"
           alt="Daniel Kan"
           className="headshot"
         />
