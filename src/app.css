@@ -33,7 +33,7 @@ body {
 }
 .main-content {
     background-image: url('../public/images/geisel.jpg'); /* Replace with the actual path to the image */
-    filter: grayscale(60%);
+    filter: grayscale(0%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
