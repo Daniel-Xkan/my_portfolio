@@ -79,7 +79,7 @@ const App = () => {
           <h2 className="text-4xl font-bold mb-4">My Resume</h2>
           <div className="w-3/4 h-3/4 bg-white rounded-lg shadow-lg overflow-hidden">
             <iframe
-              src="https://docs.google.com/document/d/1ocAYiia7nBK0xDfd-LsKAuE2QOrmjo5XBIWQWvISFT4/edit?usp=sharing"
+              src="https://drive.google.com/file/d/18wSvKB05LHMN4xsljiqA3rY72hL4CXSG/view?usp=sharing"
               width="1000"
               height="600"
               title="Google Document Viewer"
