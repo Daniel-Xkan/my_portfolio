@@ -79,7 +79,7 @@ const App = () => {
           <h2 className="text-4xl font-bold mb-4">My Resume</h2>
           <div className="w-3/4 h-3/4 bg-white rounded-lg shadow-lg overflow-hidden">
             <iframe
-              src="/files/resume.pdf"
+              src="files/resume.pdf"
               width="1000"
               height="600"
               title="Resume PDF Viewer"
